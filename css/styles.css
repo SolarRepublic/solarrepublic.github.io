@@ -206,18 +206,18 @@ nav img {
   margin-top: 10px;
 }
 .sectionContainer-advantages {
-  background-image: url("../media/bgadvantages.png");
+  /*background-image: url("../media/bgadvantages.png");*/
   margin-bottom: 120px;
 }
 .advantageContainer {
   display: inline-block;
   width: 240px;
   margin: 155px 20px;
-  background-color: #000;
   padding: 60px;
   vertical-align: top;
   border-radius: 16px;
   text-align: left;
+  background-color: #0F1317;
 }
 .advantageContainer p {
   font-size: 14px;
@@ -249,7 +249,7 @@ nav img {
   text-align: left;
 }
 .sectionContainer-examples h2 {
-  background-image: url("../media/bg.png");
+  /*background-image: url("../media/bg.png");*/
   width: 1400px;
   padding: 189px 0;
   font-size: 50px;
@@ -282,7 +282,7 @@ footer p {
   margin: 10px auto 40px;
 }
 .comingTitle {
-  background-image: url("../media/bgcoming.png");
+  /*background-image: url("../media/bgcoming.png");*/
   margin: 60px auto 20px;
   padding: 41px;
   background-repeat: no-repeat;
