@@ -29,26 +29,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
-
-<style>
-  body {
-    background-image: url('/media/landing-page.png');
-  }
-
-  #homescreen {
-    position: absolute;
-    top:  86px;
-    right:  386px;
-  }
-
-  #side-menu {
-    position: absolute;
-    top:  229px;
-    right:  -12px;
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 
 </head>
 
@@ -56,9 +37,11 @@
 
 <nav>
   <img class="logo" src="/media/logo.svg">
-  <span>Coming mid 2022</span>
-  <a target="_blank" href="https://twitter.com/StarShellWallet"><img id="twitter" src="/media/twitter.png"></a>
-  <a target="_blank" href="https://discord.gg/U8SSK7T4xh"><img src="/media/discord.png"></a>
+  <div class="navText">
+    <span>Coming mid 2022</span>
+    <img id="twitter" src="/media/twitter.png">
+    <img src="/media/discord.png">
+  </div>
 </nav>
 
 <!----Hello---->
@@ -67,7 +50,7 @@
   
   <div id="textHello">
     <h1>StarShell</h1>
-    <p>A privacy-preserving, free and open-source Web3 wallet built for the Secret Network and Cosmos.</p>
+    <p>A privacy-preserving, free and open-source Web3 wallet built for the Secret Network and Cosmos ecosystem.</p>
   </div>
   
   <div class="wrapperDown">
@@ -75,9 +58,7 @@
     <img id="imgScroll" src="/media/scroll.png">
   </div>
   
-  <!-- <img id="imgHello" src="/media/hello.png"> -->
-  <img id="homescreen" src="/media/homescreen.png">
-  <img id="side-menu" src="/media/side-menu.png">
+  <img id="imgHello" src="/media/hello.png">
 
 </div>
 
@@ -89,7 +70,7 @@
     <img src="/media/privacy.svg">
     <h3>Privacy by default</h3>
     <p>
-      Why let dApps see who you are? StarShell helps protect your identity by limiting the types of information dApps can collect about your accounts.
+      Why let dApps see who you are? WisprWallet helps protect your identity by limiting the types of information dApps can collect about your accounts.
     </p>
   </div>
 
@@ -105,7 +86,7 @@
     <img src="/media/data.svg">
     <h3>Own your data</h3>
     <p>
-      Want to download your NFT media? Export your transaction history as a spreadsheet? StarShell lets you export anything from the wallet, because it is **your data** afterall.
+      Want to download your NFT media? Export your transaction history as a spreadsheet? WisprWallet lets you export anything from the wallet, because it is **your data** afterall.
     </p>
   </div>
 
@@ -113,7 +94,7 @@
 
 <!----Search---->
 
-<div class="sectionContainer">
+<div class="sectionContainer sectionContainer-search">
 
   <div class="halfWrapper halfWrapper-left">
     <h2>Search anything</h2>
@@ -121,17 +102,17 @@
   </div>
 
   <div class="halfWrapper halfWrapper-right">
-    <img src="/media/search-bg.png">
+    <img src="/media/search.png">
   </div>
 
 </div>
 
 <!----Tags---->
 
-<div class="sectionContainer">
+<div class="sectionContainer sectionContainer-power">
 
   <div class="halfWrapper halfWrapper-left">
-    <img src="/media/tags-bg.png">
+    <img src="/media/tags.png">
   </div>
 
   <div class="halfWrapper halfWrapper-right">
@@ -146,18 +127,18 @@
 <div class="sectionContainer sectionContainer-examples">
   <h2>Use the Advanced Search to filter<br>by attributes, tags, date ranges,<br>amounts, etc.</h2>
 
-  <div class="exampleWrapper">
+  <div class="exampleWrapper exampleWrapper-big">
     <img src="/media/search1.png">
   </div>
 
-  <div class="exampleWrapper">
+  <div class="exampleWrapper exampleWrapper-left">
     <img src="/media/nfts2.png">
     <p>NFTs</p>
     <img src="/media/contacts3.png">
     <p>Contacts</p>
   </div>
 
-  <div class="exampleWrapper">
+  <div class="exampleWrapper exampleWrapper-right">
     <img src="/media/accounts4.png">
     <p>Accounts</p>
     <img src="/media/tags5.png">
@@ -171,14 +152,14 @@
 <footer>
   <h2 class="comingTitle">Coming mid 2022</h2>
   <div class="socials">
-    <a target="_blank" href="https://twitter.com/StarShellWallet"><img src="/media/twitter.png"></a>
-    <a target="_blank" href="https://discord.gg/U8SSK7T4xh"><img src="/media/discord.png"></a>
+    <a href=""><img src="/media/twitter.png"></a>
+    <a href=""><img src="/media/discord.png"></a>
   </div>
 
   <h3>StarShell</h3>
   <p>Ⓒ Solar Republic LLC 2022, all rights reserved</p>
 </footer>
 
-<script src="/js/scripts.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
