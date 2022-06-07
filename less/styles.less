@@ -50,6 +50,7 @@ table {
 @light: #F7F7F7;
 @graymed: #96A0AC;
 @graydark: #35383D;
+@graydarkest: #0F1317;
 @black: #000;
 @orange: #FFB61A;
 @fonttiny: 12px;
@@ -150,6 +151,11 @@ nav {
 	margin-top: 40px;
 }
 
+.subtleText {
+	font-size: @fonttiny !important;
+	color: @graymed !important;
+}
+
 .wrapper {
 	width: 1210px;
 	margin: 0 auto;
@@ -161,6 +167,7 @@ nav {
     padding: 15px 20px;
     border-radius: 8px;
     text-decoration:none;
+	display: inline-block;
 }
 
 .sectionContainer {
@@ -226,7 +233,7 @@ padding-bottom: 0;
 	}
 
 	h2 {
-		margin-top: 130px;
+		margin-top: 50px;
 	}
 
 	p {
@@ -462,12 +469,16 @@ padding-bottom: 0;
 .advantageContainer {
 	display: inline-block;
 	width: 240px;
-	margin: 0px 20px;
+	margin: 0px 20px 40px;
 	background-color: #0f1417;
 	padding: 40px 60px 50px;
 	vertical-align: top;
 	border-radius: 16px;
 	text-align: left;
+
+	.button {
+		margin-top: 20px;
+	}
 	
 	p {
 		font-size: 15px;
@@ -497,6 +508,10 @@ padding-bottom: 0;
 
 .halfWrapper-right {
 	text-align: left;
+}
+
+.sectionContainer-security .advantageContainer p{
+	height: auto;
 }
 
 .sectionContainer-examples {
@@ -603,9 +618,92 @@ footer {
 	display: none;
 }
 
+.columnThird {
+	width: 33.333%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.sectionContainer-security {
+	padding-top: 0;
+	padding-bottom: 80px;
+	background-image: url("/media/securitybg.png");
+
+	h2 {
+		margin-bottom: 60px;
+	}
+}
+
+.mediaPage {
+	background-image: url(/media/faq.png);
+	background-position: bottom;
+
+	.navText {
+		margin-bottom: 80px;
+	}
+
+	h1 {
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	footer {
+		margin-top: 40px;
+	}
+}
+
+.mediaContainer {
+	background-color: @graydarkest;
+    padding: 30px;
+    border-radius: 15px;
+	margin-bottom: 20px;
+	text-align: left;
+
+	.mediaIcon {
+		width: 24px;
+		height: 24px;
+		border-radius: 24px;
+		padding: 12px;
+		background-color: @black;
+		display: inline-block;
+		margin-right: 20px;
+	}
+
+	.mediaContent {
+		text-align: left;
+		display: inline-block;
+		position: relative;
+		top: 4px;
+
+		p {
+			color: @light;
+			opacity: 1;
+		}
+
+		img {
+			position: relative;
+			top: 4px;
+			left: 5px;
+		}
+
+		a {
+			color: @light;
+		}
+	}
+}
+
 /*------------------------------------------------------------------Tablet---------*/
 
 @media (max-width: 1330px) {
+
+	.mediaContent {
+		display: block;
+		width: 100%;
+	}
+
+	.mediaIcon {
+		margin-bottom: 10px;
+	}
 
 	.sectionContainer-canvas {
 		padding-top: 0;
@@ -933,13 +1031,58 @@ footer {
 		margin: 0 40px;
 	}
 
+	.sectionContainer-security {
+		background-size: contain;
 
+		.wrapper {
+			width: calc(100% - 60px);
+		}
+		.advantageContainer {
+			margin-bottom: 20px;
+		}
+	
+		.columnThird {
+			.advantageContainer {
+				width: calc(100% - 100px);
+			}
+		}
+	}
+
+	.mediaContainer {
+		margin: 0 40px 20px 40px;
+	}
+
+	.mediaPage h1 {
+		text-align: left;
+		margin-left: 40px;
+	}
 }
 
 /*------------------------------------------------------------------Mobile---------*/
 
 @media (max-width: 720px) {
 
+	nav {
+		margin: 0;
+		width: 100%;
+	}
+
+	.sectionContainer-security {
+		padding-bottom: 0;
+
+		.wrapper {
+			width: calc(100% - 0px);
+		}
+
+		.columnThird {
+			width: 100%;
+		}
+
+		h2 {
+			margin: 120px auto 20px;
+		}
+	}
+	
 	.sectionContainer-hello {
 		padding-bottom: 0;
 	}
@@ -1183,7 +1326,7 @@ footer {
 	}
 
 	.sectionContainer-identities {
-    background-image: url("'../media/mtwins.png'");
+    background-image: url("/media/mtwins.png");
     background-size: 800px;
     background-position: center;
     padding: 0px 0 200px;
@@ -1386,5 +1529,27 @@ footer {
 		.sectionContainer-faq {
 			padding-bottom: 50px;
 		}
-  }
+  	}
+
+	.mediaPage {
+		.logo {
+			display: none;
+		}
+
+		.subtleText {
+			margin-top: 5px;
+		}
+
+		.navText {
+			margin-bottom: 0;
+		}
+
+		.mediaContainer {
+			margin: 0 20px 10px;
+		}
+		h1 {
+			text-align: center;
+			margin-left: 0;
+		}
+	}
 }
