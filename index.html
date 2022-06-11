@@ -324,23 +324,23 @@ StarShell Validator</h2>
 <div class="sectionContainer sectionContainer-security">
 
   <div class="wrapper">
-  <h2>Top notch security</h2>
+  <h2>Cutting edge security</h2>
 
   <div class="columnThird">
 
       <div class="advantageContainer">
         <img src="/media/mitm.svg">
-        <h3>Only wallet which prevent MITM attacks</h3>
+        <h3>Protects against MITM attacks</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum erat eu ex vulputate facilisis. Ut et neque sagittis, laoreet dui nec, cursus tortor.
+          StarShell exposes a unique Provider API that prevents other parties from intercepting messages between page and extension. It also prevents connections from being hijacked by XSS attacks.
         </p>
       </div>
     
       <div class="advantageContainer">
         <img src="/media/crypto.svg">
-        <h3>Native cryptographic web assembly</h3>
+        <h3>Web Assembly cryptography</h3>
         <p>
-          Donec semper ante ac metus sagittis scelerisque. Ut placerat nisi vel augue sodales aliquam. Curabitur quam dui, pulvinar sit amet pulvinar.
+          We compile the highly optimized and thoroughly audited <a target="_blank" href="https://github.com/bitcoin-core/secp256k1">libsecp256k1</a> C library into Web Assembly, providing constant-time and constant-memory cryptographic operations with secure deallocation; a practice that is lightyears more secure than using JS crypto libraries you'll find any other soft wallet using.
         </p>
       </div>
 
@@ -349,9 +349,9 @@ StarShell Validator</h2>
 
       <div class="advantageContainer">
         <img src="/media/key.svg">
-        <h3>Best key management for soft wallets</h3>
+        <h3>Intelligent key management</h3>
         <p>
-          Vestibulum pellentesque tempus augue sed sodales. Aenean ut aliquam turpis. Donec tristique tincidunt euismod. Nunc ex purus, sagittis ac metus semper, viverra faucibus magna. Etiam sed felis maximus lacus.
+          User data in memory is protected while the wallet is unlocked using short-lived hot keys with one-time pads. This makes it harder for malware to steal sensitive information from soft wallet users.
         </p>
       </div>
 
@@ -359,7 +359,7 @@ StarShell Validator</h2>
         <img src="/media/cosigner.svg">
         <h3>Cosigner (keys split between phone and desktop)</h3>
         <p>
-          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eleifend eu nibh.
+          Not everyone has access to hardware wallets, but don't let your computer become a single point of failure. Splitting soft wallet keys across two devices means that even if your computer is compromised, your funds will still be safe.
         </p>
       </div>
 
@@ -368,17 +368,17 @@ StarShell Validator</h2>
 
       <div class="advantageContainer">
         <img src="/media/slip.svg">
-        <h3>Support Shamir's Secret Sharing Scheme (SLIP 0039)</h3>
+        <h3>Shamir's Secret Sharing (SLIP 0039)</h3>
         <p>
-          Vivamus a sapien aliquet, lacinia quam nec, commodo arcu. Etiam id risus suscipit, molestie turpis ut, elementum mi. 
+          Create arbitrarily complex sharing schemes to backup your mnemonic into multiple groups, with multiple shares per group, setting any threshold you want for recovery. <a href="https://github.com/satoshilabs/slips/blob/master/slip-0039.md">Learn more about SLIP-0039</a>
         </p>
       </div>
 
       <div class="advantageContainer">
         <img src="/media/ledger.svg">
-        <h3>Support Ledger wallet</h3>
+        <h3>Hardware-backed accounts</h3>
         <p>
-          Cras mollis neque ultrices, molestie est id, laoreet dui. Mauris elementum congue mauris, vitae pharetra metus mattis quis. Curabitur a magna augue.
+          StarShell supports Ledger devices as well as WebAuthn-compatible USB security keys such as the Yubikey 5 Series.
         </p>
       </div>
     </div>
