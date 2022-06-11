@@ -201,6 +201,10 @@ nav img {
   width: 100px;
   margin-top: 40px;
 }
+.subtleText {
+  font-size: 12px !important;
+  color: #96A0AC !important;
+}
 .wrapper {
   width: 1210px;
   margin: 0 auto;
@@ -211,6 +215,7 @@ nav img {
   padding: 15px 20px;
   border-radius: 8px;
   text-decoration: none;
+  display: inline-block;
 }
 .sectionContainer {
   margin: 0px auto;
@@ -262,7 +267,7 @@ nav img {
   margin-right: 40px;
 }
 .sectionContainer-canvas h2 {
-  margin-top: 130px;
+  margin-top: 50px;
 }
 .sectionContainer-canvas p {
   max-width: 600px;
@@ -455,12 +460,15 @@ nav img {
 .advantageContainer {
   display: inline-block;
   width: 240px;
-  margin: 0px 20px;
+  margin: 0px 20px 40px;
   background-color: #0f1417;
   padding: 40px 60px 50px;
   vertical-align: top;
   border-radius: 16px;
   text-align: left;
+}
+.advantageContainer .button {
+  margin-top: 20px;
 }
 .advantageContainer p {
   font-size: 15px;
@@ -484,6 +492,9 @@ nav img {
 }
 .halfWrapper-right {
   text-align: left;
+}
+.sectionContainer-security .advantageContainer p {
+  height: auto;
 }
 .sectionContainer-examples {
   background-image: url("/media/bg.png");
@@ -570,8 +581,76 @@ footer a {
 .hiddenDesktop {
   display: none;
 }
+.columnThird {
+  width: 33.333%;
+  display: inline-block;
+  vertical-align: top;
+}
+.sectionContainer-security {
+  padding-top: 0;
+  padding-bottom: 80px;
+  background-image: url("/media/securitybg.png");
+}
+.sectionContainer-security h2 {
+  margin-bottom: 60px;
+}
+.mediaPage {
+  background-image: url(/media/faq.png);
+  background-position: bottom;
+}
+.mediaPage .navText {
+  margin-bottom: 80px;
+}
+.mediaPage h1 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.mediaPage footer {
+  margin-top: 40px;
+}
+.mediaContainer {
+  background-color: #0F1317;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.mediaContainer .mediaIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  padding: 12px;
+  background-color: #000;
+  display: inline-block;
+  margin-right: 20px;
+}
+.mediaContainer .mediaContent {
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+.mediaContainer .mediaContent p {
+  color: #F7F7F7;
+  opacity: 1;
+}
+.mediaContainer .mediaContent img {
+  position: relative;
+  top: 4px;
+  left: 5px;
+}
+.mediaContainer .mediaContent a {
+  color: #F7F7F7;
+}
 /*------------------------------------------------------------------Tablet---------*/
 @media (max-width: 1330px) {
+  .mediaContent {
+    display: block;
+    width: 100%;
+  }
+  .mediaIcon {
+    margin-bottom: 10px;
+  }
   .sectionContainer-canvas {
     padding-top: 0;
   }
@@ -819,9 +898,44 @@ footer a {
     width: calc(100% - 80px);
     margin: 0 40px;
   }
+  .sectionContainer-security {
+    background-size: contain;
+  }
+  .sectionContainer-security .wrapper {
+    width: calc(100% - 60px);
+  }
+  .sectionContainer-security .advantageContainer {
+    margin-bottom: 20px;
+  }
+  .sectionContainer-security .columnThird .advantageContainer {
+    width: calc(100% - 100px);
+  }
+  .mediaContainer {
+    margin: 0 40px 20px 40px;
+  }
+  .mediaPage h1 {
+    text-align: left;
+    margin-left: 40px;
+  }
 }
 /*------------------------------------------------------------------Mobile---------*/
 @media (max-width: 720px) {
+  nav {
+    margin: 0;
+    width: 100%;
+  }
+  .sectionContainer-security {
+    padding-bottom: 0;
+  }
+  .sectionContainer-security .wrapper {
+    width: calc(100% - 0px);
+  }
+  .sectionContainer-security .columnThird {
+    width: 100%;
+  }
+  .sectionContainer-security h2 {
+    margin: 120px auto 20px;
+  }
   .sectionContainer-hello {
     padding-bottom: 0;
   }
@@ -1013,7 +1127,7 @@ footer a {
     text-align: center;
   }
   .sectionContainer-identities {
-    background-image: url('../media/mtwins.png');
+    background-image: url("/media/mtwins.png");
     background-size: 800px;
     background-position: center;
     padding: 0px 0 200px;
@@ -1173,5 +1287,21 @@ footer a {
   }
   .faqPage .sectionContainer-faq {
     padding-bottom: 50px;
+  }
+  .mediaPage .logo {
+    display: none;
+  }
+  .mediaPage .subtleText {
+    margin-top: 5px;
+  }
+  .mediaPage .navText {
+    margin-bottom: 0;
+  }
+  .mediaPage .mediaContainer {
+    margin: 0 20px 10px;
+  }
+  .mediaPage h1 {
+    text-align: center;
+    margin-left: 0;
   }
 }

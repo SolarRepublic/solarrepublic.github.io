@@ -38,6 +38,7 @@
 <nav>
   <img class="logo" src="/media/logoshort.svg">
   <div class="navText">
+    <span><a href="media.html">Media</a></span>
     <span><a href="faq.html">FAQ</a></span>
     <span>Coming Q4 2022</span>
     <div class="navText-icons">
@@ -318,6 +319,72 @@ StarShell Validator</h2>
 
 </div>
 
+<!--Security-->
+  
+<div class="sectionContainer sectionContainer-security">
+
+  <div class="wrapper">
+  <h2>Cutting edge security</h2>
+
+  <div class="columnThird">
+
+      <div class="advantageContainer">
+        <img src="/media/mitm.svg">
+        <h3>Protects against MITM attacks</h3>
+        <p>
+          StarShell exposes a unique Provider API that prevents other parties from intercepting messages between page and extension. It also prevents connections from being hijacked by XSS attacks.
+        </p>
+      </div>
+    
+      <div class="advantageContainer">
+        <img src="/media/crypto.svg">
+        <h3>Web Assembly cryptography</h3>
+        <p>
+          We compile the highly optimized and thoroughly audited <a target="_blank" href="https://github.com/bitcoin-core/secp256k1">libsecp256k1</a> C library into Web Assembly, providing constant-time and constant-memory cryptographic operations with secure deallocation; a practice that is lightyears more secure than using JS crypto libraries you'll find any other soft wallet using.
+        </p>
+      </div>
+
+  </div>
+  <div class="columnThird">
+
+      <div class="advantageContainer">
+        <img src="/media/key.svg">
+        <h3>Intelligent key management</h3>
+        <p>
+          User data in memory is protected while the wallet is unlocked using short-lived hot keys with one-time pads. This makes it harder for malware to steal sensitive information from soft wallet users.
+        </p>
+      </div>
+
+      <div class="advantageContainer">
+        <img src="/media/cosigner.svg">
+        <h3>Cosigner (keys split between phone and desktop)</h3>
+        <p>
+          Not everyone has access to hardware wallets, but don't let your computer become a single point of failure. Splitting soft wallet keys across two devices means that even if your computer is compromised, your funds will still be safe.
+        </p>
+      </div>
+
+  </div>
+  <div class="columnThird"> 
+
+      <div class="advantageContainer">
+        <img src="/media/slip.svg">
+        <h3>Shamir's Secret Sharing (SLIP 0039)</h3>
+        <p>
+          Create arbitrarily complex sharing schemes to backup your mnemonic into multiple groups, with multiple shares per group, setting any threshold you want for recovery. <a href="https://github.com/satoshilabs/slips/blob/master/slip-0039.md">Learn more about SLIP-0039</a>
+        </p>
+      </div>
+
+      <div class="advantageContainer">
+        <img src="/media/ledger.svg">
+        <h3>Hardware-backed accounts</h3>
+        <p>
+          StarShell supports Ledger devices as well as WebAuthn-compatible USB security keys such as the Yubikey 5 Series.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!----Canvas---->
 
 <div class="sectionContainer sectionContainer-canvas">
@@ -369,19 +436,17 @@ StarShell Validator</h2>
 
       <div class="footerColumn">
         <p class="footerColumn-label">Learn</p>
-        <a>Introduction</a>
-        <a>Features</a>
+        <a href="faq.html">FAQ</a>
       </div>
 
       <div class="footerColumn">
         <p class="footerColumn-label">Build</p>
-        <a>Developers Portal</a>
-        <a>Starport</a>
+        <a href="https://github.com/SolarRepublic" target="_blank">GitHub</a>
       </div>
 
       <div class="footerColumn">
         <p class="footerColumn-label">Explore</p>
-        <a>DU5T token</a>
+        <a href="media.html">Media</a>
       </div>
       <div class="footerIcons">
         <a href="https://twitter.com/StarShellWallet" target="_blank"><img src="/media/twitter.png"></a>
