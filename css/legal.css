@@ -29,3 +29,9 @@ ul {
 	gap: 0.5em;
 	margin-left: 1.5em;
 }
+
+code {
+	background-color: #f0f0f0;
+	padding: 2px 6px;
+	border-radius: 4px;
+}
