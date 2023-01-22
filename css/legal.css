@@ -24,6 +24,8 @@ p {
 }
 
 ul {
-	line-height: 1.85em;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
 	margin-left: 1.5em;
 }
