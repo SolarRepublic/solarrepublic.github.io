@@ -170,6 +170,11 @@ nav {
 	display: inline-block;
 }
 
+.button-big {
+	font-size: @fontlarge;
+	padding: 20px 35px;
+}
+
 .sectionContainer {
 	margin: 0px auto;
 	text-align: center;
@@ -224,6 +229,11 @@ padding-bottom: 0;
 	h2 {
 		margin-bottom: 50px;
     	margin-top: 150px;
+	}
+
+	img {
+		width: 100%;
+		max-width: 1476px;
 	}
 }
 
@@ -416,6 +426,15 @@ padding-bottom: 0;
 	}
 }
 
+.sectionContainer-coming {
+    background-image: url(/media/bgcoming.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 25px 0;
+    margin: 20px auto 4%;
+}
+
 .sectionContainer-power {
 	background-image: url("/media/powerusersbg.png");
 	margin-top: -100px;
@@ -437,8 +456,12 @@ padding-bottom: 0;
 
 #textHello {
 	position: relative;
-	top: 230px;
+	top: 100px;
 	max-width: 360px;
+
+	p {
+		margin-bottom: 40px;
+	}
 }
 
 #imgHello {
@@ -748,7 +771,8 @@ footer {
 
   	img {
   		width: calc(100% - 80px);
-  		margin: inherit 40px;
+  		margin-right: 40px;
+  		margin-left: 40px;
   	}
 
   	h2 {
@@ -1067,6 +1091,11 @@ footer {
 		width: 100%;
 	}
 
+	.button-big {
+		font-size: @fontmed;
+		padding: 15px 20px;
+	}
+
 	.sectionContainer-security {
 		padding-bottom: 0;
 
@@ -1180,7 +1209,7 @@ footer {
 
   #textHello p {
   	width: 80%;
-  	margin: 0 auto;
+  	margin: 0 auto 30px;
   }
 
 	.sectionContainer-antidoxx .wrapper {
@@ -1293,6 +1322,7 @@ footer {
 
 		img {
 			width: calc(100% - 40px);
+			margin: 0;
 		}
 	}
 

@@ -217,6 +217,10 @@ nav img {
   text-decoration: none;
   display: inline-block;
 }
+.button-big {
+  font-size: 21px;
+  padding: 20px 35px;
+}
 .sectionContainer {
   margin: 0px auto;
   text-align: center;
@@ -262,6 +266,10 @@ nav img {
 .sectionContainer-roadmap h2 {
   margin-bottom: 50px;
   margin-top: 150px;
+}
+.sectionContainer-roadmap img {
+  width: 100%;
+  max-width: 1476px;
 }
 .sectionContainer-canvas img {
   margin-right: 40px;
@@ -415,6 +423,14 @@ nav img {
 .sectionContainer-identities h2 {
   margin-top: 0px;
 }
+.sectionContainer-coming {
+  background-image: url(/media/bgcoming.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 25px 0;
+  margin: 20px auto 4%;
+}
 .sectionContainer-power {
   background-image: url("/media/powerusersbg.png");
   margin-top: -100px;
@@ -433,8 +449,11 @@ nav img {
 }
 #textHello {
   position: relative;
-  top: 230px;
+  top: 100px;
   max-width: 360px;
+}
+#textHello p {
+  margin-bottom: 40px;
 }
 #imgHello {
   position: absolute;
@@ -684,7 +703,8 @@ footer a {
   }
   .sectionContainer-roadmap img {
     width: calc(100% - 80px);
-    margin: inherit 40px;
+    margin-right: 40px;
+    margin-left: 40px;
   }
   .sectionContainer-roadmap h2 {
     margin-top: 40px;
@@ -924,6 +944,10 @@ footer a {
     margin: 0;
     width: 100%;
   }
+  .button-big {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
   .sectionContainer-security {
     padding-bottom: 0;
   }
@@ -1010,7 +1034,7 @@ footer a {
   }
   #textHello p {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 30px;
   }
   .sectionContainer-antidoxx .wrapper {
     width: calc(100% - 40px);
@@ -1102,6 +1126,7 @@ footer a {
   }
   .sectionContainer-roadmap img {
     width: calc(100% - 40px);
+    margin: 0;
   }
   .footerColumn-label {
     display: none;
