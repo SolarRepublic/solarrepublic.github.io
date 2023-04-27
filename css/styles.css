@@ -201,6 +201,17 @@ nav img {
   width: 100px;
   margin-top: 40px;
 }
+.nav-logo {
+	position: absolute;
+}
+.nav-logo>div {
+	color: #d3d3d3;
+	text-align: left;
+	margin-top: 1em;
+}
+.nav-logo>.logo {
+	margin-top: 5px;
+}
 .subtleText {
   font-size: 12px !important;
   color: #96A0AC !important;
