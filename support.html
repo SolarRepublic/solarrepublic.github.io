@@ -23,24 +23,11 @@
   <link rel="icon" type="image/svg+xml" href="/media/logo-02.svg">
   <link rel="icon" type="image/png" href="/media/logo-dark.png">
 
-  <!-- <link rel="stylesheet/less" type="text/css" href="/less/styles.less" /> -->
   <link rel="stylesheet" type="text/css" href="/css/styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-
-  <script
-    src="https://code.jquery.com/jquery-3.6.0.js"
-    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-
-  <script>
-      function hideSeek(x,y) {
-      $(x).toggleClass( "hidden" );
-    }
-  </script>
 </head>
 
 <body class="faqPage">
@@ -60,57 +47,18 @@
   </div>
 </nav>
 
-<div class="sectionContainer sectionContainer-faq">
+<div class="sectionContainer">
   <div class="wrapper">
-    <h1>FAQ</h1>
+    <h1>Resources</h1>
 
     <div class="faqContainer">
-      <div class="faqTitle" onclick="hideSeek('.faqAnswer1','.arrow1')">
-        <img src="../media/arrow.svg" class="arrow1"><p>Is there a testnet?</p>
+      <div class="faqTitle">
+        <img src="../media/arrow.svg" class="arrow1"><p>Contact Support</p>
       </div>
       <div class="faqAnswer faqAnswer1 hidden">
-        <p>Yes! However, we are currently in between testing periods. <a href="https://install.starshell.net/" target="_blank">Install wallet</a> if you would like to play with the testnet.</p>
+        <p>If you'd like to report any issues with the app or would like to request customer support, please send an e-mail to <a href="mailto:support@starshell.net">support@starshell.net</a> with a detailed description.</p>
       </div>
     </div>
-
-    <!-- <div class="faqContainer">
-      <div class="faqTitle" onclick="hideSeek('.faqAnswer2','.arrow2')">
-        <img src="../media/arrow.svg" class="arrow2"><p>What is a validator and how does it earn me money?</p>
-      </div>
-      <div class="faqAnswer faqAnswer2 hidden">
-        <p>StarShell will be operating a full node that is able to receive delegations of SCRT from anyone on the network.<br> With enough combined delegations, the full node is allowed to “validate” new blocks into existence and onto the chain;<br>it receives a reward for doing so. As with most proof-of-stake (PoS) protocols, users who delegate to a validator<br>get to share in the rewards for helping secure the network.</p>
-      </div>
-    </div> -->
-
-    <!-- <div class="faqContainer">
-      <div class="faqTitle" onclick="hideSeek('.faqAnswer3','.arrow3')">
-        <img src="../media/arrow.svg" class="arrow3"><p>Why stake with StarShell over other validators?</p>
-      </div>
-      <div class="faqAnswer faqAnswer3 hidden">
-        <p>By delegating to the StarShell validator, not only do you earn staking rewards in SCRT, but you also receive<br>VIP treatment for directly helping support the ongoing development and infrastructure costs<br>required to maintain the wallet.</p>
-      </div>
-    </div> -->
-
-    <div class="faqContainer">
-      <div class="faqTitle" onclick="hideSeek('.faqAnswer4','.arrow4')">
-        <img src="../media/arrow.svg" class="arrow4"><p>What level of quality is the StarShell validator?</p>
-      </div>
-      <div class="faqAnswer faqAnswer4 hidden">
-        <p>The absolute highest quality.</p>
-        <p>By delegating to a particular validator, you are trusting that the operators of that machine will keep it healthy and online as much as possible, so its important to choose wisely.</p>
-        <p>At StarShell, we have developed a state-of-the-art, hybrid cloud validator network in order to participate in securing the Secret Network blockchain.</p>
-      </div>
-    </div>
-
-    <div class="faqContainer">
-      <div class="faqTitle" onclick="hideSeek('.faqAnswer5','.arrow5')">
-        <img src="../media/arrow.svg" class="arrow5"><p>How do random websites know that I use cryptocurrencies?</p>
-      </div>
-      <div class="faqAnswer faqAnswer5 hidden">
-        <p>Without your permission, websites you visit can see exactly which wallet extensions you have installed in your browser. This happens because wallets deliberately make themselves known to every site you ever visit, but <a href="https://medium.com/@starshellwallet/5023f8f872b1" target="_blank">it doesn’t have to be this way!</a></p>
-      </div>
-    </div>
-
   </div>
 </div>
 
