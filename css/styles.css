@@ -1342,6 +1342,6 @@ footer a {
   }
 }
 
-.halfWrapper>img {
+.halfWrapper:not(.halfWrapper-right)>img {
   height: 115px;
 }
